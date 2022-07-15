@@ -237,16 +237,13 @@ body {
     flex-grow: 1;
 }
 
-.main-index {
-    position: relative;
-}
-
 .main-hero {
+    position: relative;
     background-image: url("../images/index-background.jpg");
     background-repeat: no-repeat;
     color: #000000;
     background-color: #3F5E72;
-    background-size: 100% auto;
+    background-size: cover;
 
 }
 
@@ -255,7 +252,8 @@ body {
     height: 57px;
     background-image: url("../images/divider.svg");
     content: "";
-    top: 429px;
+    bottom: 0;
+    left: 0;
     position: absolute;
 
 }
@@ -728,12 +726,8 @@ body {
 }
 
 .breadcrumbs-icon-main {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    display: block;
+    padding-top: 3px;
     fill: #FFFFFF;
 }
 
@@ -1879,7 +1873,7 @@ body {
 }
 
 .tooltip-text:after {
-    content: '';
+    content: "";
     background-image: url("../images/modal/arrow-tooltip.svg");
     width: 19px;
     height: 9px;
